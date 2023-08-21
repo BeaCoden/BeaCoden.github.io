@@ -106,7 +106,7 @@ ul {
   font-size: var(--font-size-body);
   margin: 0 auto;
   animation: donutfade 1s;
-  padding: 20px;
+  padding: 10px;
   max-width: 30%;
   display: inline-block;
 }
@@ -188,17 +188,17 @@ ul {
 }
 
 .donutSegmentDevTools {
-  stroke: #faa307;
+  stroke: #f5b846;
   animation: donut9 3s;
 }
 
 .donutTextDevTools {
-  fill: #faa307;
+  fill: #f5b846;
 }
 
 .donutPercent {
   font-size: var(--font-size-bodyS);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-bold);
   animation: donutfadelong 1s;
   line-height: 1;
   transform: translateY(0.5em);
