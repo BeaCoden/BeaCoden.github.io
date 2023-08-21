@@ -112,88 +112,88 @@ ul {
 }
 
 .donutRing {
-  stroke: #e1ccb2;
+  stroke: #cecac9;
 }
 
 .donutSegmentHtml {
-  stroke: #53C480;
+  stroke: #03071e;
   animation: donut1 3s;
 }
 
 .donutTextHtml {
-  fill: #53C480;
+  fill: #03071e;
 }
 
 .donutSegmentCss {
-  stroke: #5381C6;
+  stroke: #370617;
   animation: donut2 3s;
 }
 
 .donutTextCss {
-  fill: #5381C6;
+  fill: #370617;
 }
 
 .donutSegmentTailwindCss {
-  stroke: #0afe1a;
+  stroke: #6a040f;
   animation: donut3 3s;
 }
 
 .donutTextTailwindCss {
-  fill: #0afe1a;
+  fill: #6a040f;
 }
 
 .donutSegmentJavaScript {
-  stroke: #f95da4;
+  stroke: #9d0208;
   animation: donut4 3s;
 }
 
 .donutTextJavaScript {
-  fill: #f95da4;
+  fill: #9d0208;
 }
 
 .donutSegmentNpm {
-  stroke: #10598a;
+  stroke: #d00000;
   animation: donut5 3s;
 }
 
 .donutTextNpm {
-  fill: #10598a;
+  fill: #d00000;
 }
 
 .donutSegmentGitHub {
-  stroke: #510404;
+  stroke: #dc2f02;
   animation: donut6 3s;
 }
 
 .donutTextGitHub {
-  fill: #510404;
+  fill: #dc2f02;
 }
 
 .donutSegmentGit {
-  stroke: #61DBFB;
+  stroke: #e85d04;
   animation: donut7 3s;
 }
 
 .donutTextGit {
-  fill: #61DBFB;
+  fill: #e85d04;
 }
 
 .donutSegmentVue {
-  stroke: #0a8027;
+  stroke: #f48c06;
   animation: donut8 3s;
 }
 
 .donutTextVue {
-  fill: #0a8027;
+  fill: #f48c06;
 }
 
 .donutSegmentDevTools {
-  stroke: #d705ee;
+  stroke: #faa307;
   animation: donut9 3s;
 }
 
 .donutTextDevTools {
-  fill: #d705ee;
+  fill: #faa307;
 }
 
 .donutPercent {
