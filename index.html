@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="style.css" />
+  <!-- CHART JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <title>Bea Pitzschke CV</title>
 </head>
 
@@ -162,47 +165,177 @@
           </div>
         </div>
       </section>
+
       <!-- SKILLS -->
       <section class="sectionBoxTwo skills">
         <!-- professional -->
         <h2 class="title2">professional Skills</h2>
-        <div class="box">
-          <p>HTML</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="svgItem html">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentHtml" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextHtml">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">HTML</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
-        <div class="box">
-          <p>CSS</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="svgItem css">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentCss" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="65 35" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextCss">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">CSS</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
-        <div class="box">
-          <p>JavaScript</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="svgItem tailwindCss">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentTailwindCss" cx="20" cy="20" r="15.91549430918954"
+              fill="transparent" stroke-width="3.5" stroke-dasharray="5 95" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextTailwindCss">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">Tailwind</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
-        <div class="box">
-          <p>Figma</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="svgItem javascript">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentJavaScript" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextJavaScript">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">JavaScript</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
-        <div class="box">
-          <p>LOREM</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="svgItem npm">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentNpm" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="45 55" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextNpm">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">npm</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
-        <div class="box">
-          <p>LOREM</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="svgItem github">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentGitHub" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="90 10" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextGitHub">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">GitHub</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+        <div class="svgItem git">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentGit" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextGit">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">git</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+        <div class="svgItem vue">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentVue" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="20 80" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextVue">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">Vue</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+        <div class="svgItem devTools">
+          <svg width="50%" height="50%" viewBox="0 0 40 40" class="donut">
+            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+            </circle>
+            <circle class="donutSegment donutSegmentDevTools" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+              stroke-width="3.5" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+            <g class="donutText donutTextDevTools">
+              <text y="50%" transform="translate(0, 2)">
+                <tspan x="50%" text-anchor="middle" class="donutPercent">DevTools</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="donut-chart-container">
+          <canvas id="donut-chart"></canvas>
+        </div> -->
         <!-- soft -->
         <div class="soft">
           <h2>soft Skills</h2>
@@ -217,7 +350,6 @@
         </div>
       </section>
 
-      <!-- INTERESTS -->
       <!-- INTERESTS -->
       <section class="sectionBoxTwo interest">
         <h2 class="title2">Interests</h2>
@@ -241,12 +373,15 @@
         </ul>
       </section>
     </div>
+
+    <!-- FOOTER -->
     <footer>
       <p class="copyright">
         &copy; 2023 Bea Pitzschke
       </p>
     </footer>
   </container>
+  <script src="script.js"></script>
 </body>
 
 </html>
