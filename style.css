@@ -1,0 +1,96 @@
+/* === GLOBAL === */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-h1-color: orange;
+  --heading-h2-color: #cc4732;
+  --heading-h3-color: #7dee40;
+  --heading-h4-color: #1900ff;
+  --heading-h5-color: #ff00b7;
+  --text-color: black;
+
+  --font-family: 'Montserrat', sans-serif;
+  --font-size-h1: 1.75rem;
+  --font-size-h2: 1.50rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h4: 1rem;
+  --font-size-h5: 0.75rem;
+  --font-size-p: 1rem;
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  color: var(--heading-h1-color);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  color: var(--heading-h2-color);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  color: var(--heading-h3-color);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  color: var(--heading-h4-color);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+  color: var(--heading-h5-color);
+}
+
+p {
+  font-size: var(--font-size-p);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
