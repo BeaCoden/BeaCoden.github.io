@@ -94,3 +94,10 @@ img {
 ul {
   list-style: none;
 }
+
+.donut-chart-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+}

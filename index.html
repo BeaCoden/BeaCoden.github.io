@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="style.css" />
+  <!-- CHART JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <title>Bea Pitzschke CV</title>
 </head>
 
@@ -162,47 +165,14 @@
           </div>
         </div>
       </section>
+
       <!-- SKILLS -->
       <section class="sectionBoxTwo skills">
         <!-- professional -->
         <h2 class="title2">professional Skills</h2>
-        <div class="box">
-          <p>HTML</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
+        <div class="donut-chart-container">
+          <canvas id="donut-chart"></canvas>
         </div>
-        <div class="box">
-          <p>CSS</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
-        </div>
-        <div class="box">
-          <p>JavaScript</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
-        </div>
-        <div class="box">
-          <p>Figma</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
-        </div>
-        <div class="box">
-          <p>LOREM</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
-        </div>
-        <div class="box">
-          <p>LOREM</p>
-          <div>
-            <!-- add animated progress bar or circle -->
-          </div>
-        </div>
-
         <!-- soft -->
         <div class="soft">
           <h2>soft Skills</h2>
@@ -217,7 +187,6 @@
         </div>
       </section>
 
-      <!-- INTERESTS -->
       <!-- INTERESTS -->
       <section class="sectionBoxTwo interest">
         <h2 class="title2">Interests</h2>
@@ -241,12 +210,15 @@
         </ul>
       </section>
     </div>
+
+    <!-- FOOTER -->
     <footer>
       <p class="copyright">
         &copy; 2023 Bea Pitzschke
       </p>
     </footer>
   </container>
+  <script src="script.js"></script>
 </body>
 
 </html>
