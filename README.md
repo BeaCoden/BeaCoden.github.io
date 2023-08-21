@@ -6,8 +6,7 @@ A brief Portfolio Webiste of my...
 
 - [ ] educations :books:
 - [ ] qualifications :star:
-- [ ] previous job experiences
-- [ ] and projects :computer:
+- [ ] previous job experiences :computer:
 
 ## Project Status
 
