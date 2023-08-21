@@ -316,13 +316,3 @@ ul {
     stroke-dasharray: 60, 40;
   }
 }
-
-/* soft Skills */
-
-
-/* === MEDIA QUERIES === */
-@media (min-width: 992px) {
-  .svg-item {
-    width: 80%;
-  }
-}
