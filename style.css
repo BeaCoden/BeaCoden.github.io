@@ -16,6 +16,10 @@
   --text-color: black;
 
   --font-family: 'Montserrat', sans-serif;
+  --font-size-body: 1rem;
+  --font-size-bodyS: 0.25rem;
+  --font-size-bodyM: 0.50rem;
+  --font-size-bodyL: 0.75rem;
   --font-size-h1: 1.75rem;
   --font-size-h2: 1.50rem;
   --font-size-h3: 1.25rem;
@@ -95,9 +99,229 @@ ul {
   list-style: none;
 }
 
-.donut-chart-container {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  margin: auto;
+/* === SKILLS === */
+/* professional Skills */
+.svgItem {
+  width: 100%;
+  font-size: var(--font-size-body);
+  margin: 0 auto;
+  animation: donutfade 1s;
+  padding: 20px;
+  max-width: 30%;
+  display: inline-block;
+}
+
+.donutRing {
+  stroke: #e1ccb2;
+}
+
+.donutSegmentHtml {
+  stroke: #53C480;
+  animation: donut1 3s;
+}
+
+.donutTextHtml {
+  fill: #53C480;
+}
+
+.donutSegmentCss {
+  stroke: #5381C6;
+  animation: donut2 3s;
+}
+
+.donutTextCss {
+  fill: #5381C6;
+}
+
+.donutSegmentTailwindCss {
+  stroke: #0afe1a;
+  animation: donut3 3s;
+}
+
+.donutTextTailwindCss {
+  fill: #0afe1a;
+}
+
+.donutSegmentJavaScript {
+  stroke: #f95da4;
+  animation: donut4 3s;
+}
+
+.donutTextJavaScript {
+  fill: #f95da4;
+}
+
+.donutSegmentNpm {
+  stroke: #10598a;
+  animation: donut5 3s;
+}
+
+.donutTextNpm {
+  fill: #10598a;
+}
+
+.donutSegmentGitHub {
+  stroke: #510404;
+  animation: donut6 3s;
+}
+
+.donutTextGitHub {
+  fill: #510404;
+}
+
+.donutSegmentGit {
+  stroke: #61DBFB;
+  animation: donut7 3s;
+}
+
+.donutTextGit {
+  fill: #61DBFB;
+}
+
+.donutSegmentVue {
+  stroke: #0a8027;
+  animation: donut8 3s;
+}
+
+.donutTextVue {
+  fill: #0a8027;
+}
+
+.donutSegmentDevTools {
+  stroke: #d705ee;
+  animation: donut9 3s;
+}
+
+.donutTextDevTools {
+  fill: #d705ee;
+}
+
+.donutPercent {
+  font-size: var(--font-size-bodyS);
+  font-weight: var(--font-weight-light);
+  animation: donutfadelong 1s;
+  line-height: 1;
+  transform: translateY(0.5em);
+}
+
+/* Skills Donut Keyframes */
+@keyframes donutfade {
+  0% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes donutfadelong {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes donut1 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 85, 15;
+  }
+}
+
+@keyframes donut2 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 65, 35;
+  }
+}
+
+@keyframes donut3 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 5, 95;
+  }
+}
+
+@keyframes donut4 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 40, 60;
+  }
+}
+
+@keyframes donut5 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 45, 55;
+
+  }
+}
+
+@keyframes donut6 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 90, 10;
+  }
+}
+
+@keyframes donut7 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 60, 40;
+  }
+}
+
+@keyframes donut8 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 20, 80;
+  }
+}
+
+@keyframes donut9 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 60, 40;
+  }
+}
+
+/* soft Skills */
+
+
+/* === MEDIA QUERIES === */
+@media (min-width: 992px) {
+  .svg-item {
+    width: 80%;
+  }
 }
