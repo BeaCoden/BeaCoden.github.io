@@ -316,3 +316,31 @@ ul {
     stroke-dasharray: 60, 40;
   }
 }
+
+/* === LANGUAGES === */
+.sectionBoxOne.language .percent {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  background-color: #eb8b7c;
+  display: block;
+  margin-top: 5px;
+}
+
+.sectionBoxOne.language .percent .germanw95 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 95%;
+  background-color: #d12b2b;
+}
+
+.sectionBoxOne.language .percent .englishw60 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  background-color: #d12b2b;
+}
