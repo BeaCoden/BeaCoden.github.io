@@ -1,24 +1,21 @@
-/* === GLOBAL === */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* === ROOTS === */
 :root {
+  /* color */
   --heading-h1-color: orange;
   --heading-h2-color: #cc4732;
   --heading-h3-color: #7dee40;
   --heading-h4-color: #1900ff;
   --heading-h5-color: #ff00b7;
+
   --text-color: black;
+
   --background-color-body: #6f6b6b;
   --background-color-light: #cad0d5;
   --background-color-dark: #343a40;
+
   --border-color: #ec0606;
 
+  /* font */
   --font-family: 'Montserrat', sans-serif;
   --font-size-body: 1rem;
   --font-size-bodyS: 0.25rem;
@@ -33,6 +30,15 @@
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-bold: 600;
+}
+
+/* === GLOBAL === */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -107,6 +113,7 @@ ul {
   list-style: none;
 }
 
+/* === BODY === */
 .cvContainer {
   position: relative;
   width: 100%;
@@ -119,12 +126,14 @@ ul {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
+/* === BODY LEFT === */
 .cvContainer .leftSide {
   position: relative;
   background-color: var(--background-color-light);
   padding: 40px;
 }
 
+/* Profil IMG & NAME */
 .imgAndName {
   position: relative;
   display: flex;
@@ -152,7 +161,48 @@ ul {
   object-fit: cover;
 }
 
-/* === SKILLS === */
+/* CONTACT */
+
+/* EDUCATION */
+
+/* LANGUAGES */
+.sectionBoxOne.language .percent {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  background-color: #eb8b7c;
+  display: block;
+  margin-top: 5px;
+}
+
+.sectionBoxOne.language .percent .germanw95 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 95%;
+  background-color: #d12b2b;
+}
+
+.sectionBoxOne.language .percent .englishw60 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  background-color: #d12b2b;
+}
+
+
+
+
+/*  === BODY RIGHT === */
+
+/* ABOUT */
+
+/* EXPERIENCES */
+
+/* SKILLS */
 /* professional Skills */
 .svgItem {
   font-size: var(--font-size-body);
@@ -370,30 +420,10 @@ ul {
   }
 }
 
-/* === LANGUAGES === */
-.sectionBoxOne.language .percent {
-  position: relative;
-  width: 50px;
-  height: 5px;
-  background-color: #eb8b7c;
-  display: block;
-  margin-top: 5px;
-}
+/* soft Skills */
 
-.sectionBoxOne.language .percent .germanw95 {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 95%;
-  background-color: #d12b2b;
-}
+/* INTERESTS */
 
-.sectionBoxOne.language .percent .englishw60 {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 65%;
-  background-color: #d12b2b;
-}
+/* === FOOTER === */
+
+/* === MEDIA QUERIES === */
