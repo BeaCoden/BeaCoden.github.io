@@ -2,6 +2,8 @@
 :root {
   /* colors */
   --background-color-body: #6f6b6b;
+  --background-color-left: #d9d4d1;
+  --background-color-right: #fff;
   --background-color-light: #b8bcbf;
   --background-color-dark: #343a40;
 
@@ -19,10 +21,11 @@
 
   /* font family & size*/
   --font-family: 'Montserrat', sans-serif;
-  --font-size-body: 1rem;
+  --font-size-body: 1.25rem;
   --font-size-bodyS: 0.25rem;
   --font-size-bodyM: 0.50rem;
   --font-size-bodyL: 0.75rem;
+  --font-size-bodyXL: 1rem;
   --font-size-h1: 1.75rem;
   --font-size-h2: 1.50rem;
   --font-size-h3: 1.25rem;
@@ -31,6 +34,7 @@
   --font-size-p: 1rem;
   --font-weight-light: 400;
   --font-weight-regular: 500;
+  --font-weight-lightbold: 550;
   --font-weight-bold: 600;
 }
 
@@ -63,7 +67,6 @@ h4,
 h5 {
   font-family: var(--font-family);
   font-weight: var(--font-weight-bold);
-  line-height: 1.2;
 }
 
 h1 {
@@ -131,7 +134,7 @@ ul {
 /* === BODY LEFT === */
 .cvContainer .leftSide {
   position: relative;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-left);
   padding: 40px;
 }
 
@@ -170,7 +173,6 @@ ul {
   text-transform: uppercase;
   text-align: center;
   font-weight: var(--font-weight-regular);
-  line-height: 1.4em;
 }
 
 .imgAndName h1 span {
@@ -237,31 +239,33 @@ ul {
   padding-top: 10px;
 }
 
+.education ul {
+  border-left: var(--background-color-dark) 2px solid;
+  padding: 10px;
+}
+
 .education li {
   margin-bottom: 40px;
 }
 
 .education h5 {
   color: var(--text-color);
-  font-weight: var(--font-weight-bold);
-  line-height: 1.5em;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-bodyL);
 }
 
 .education h5:nth-child(1) {
-  color: var(--icon-color);
-  font-weight: var(--font-weight-light);
-  line-height: 2.5em;
+  color: var(--text-color);
+  background-color: var(--icon-background-color);
+  /* font-weight: var(--font-weight-light); */
 }
 
 .education h4 {
   color: var(--text-color);
-  font-weight: var(--font-weight-bold);
-  /* border-bottom: var(--background-color-dark) 2px solid;
-  border-right: var(--background-color-dark) 2px solid; */
-  border-radius: 15px;
+  font-weight: var(--font-weight-lightbold);
+  font-size: var(--font-size-bodyXL);
   padding-right: 10px;
   text-align: right;
-  padding-top: 5px;
 }
 
 /* LANGUAGES */
@@ -403,7 +407,6 @@ ul {
   font-size: var(--font-size-bodyS);
   font-weight: var(--font-weight-bold);
   animation: donutfadelong 1s;
-  line-height: 1;
   transform: translateY(0.5em);
 }
 
