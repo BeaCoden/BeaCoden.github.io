@@ -12,6 +12,10 @@
   --box-shadow-img: 8px 8px 25px 0px var(--background-color-dark);
   --box-shadow-container: 0 35px 55px rgba(0, 0, 0, 0.1);
 
+  /* icon */
+  --icon-color: #6f6b6b;
+  --icon-background-color: #c6dff2;
+
   /* font color */
   --heading-color: orange;
   --text-color: black;
@@ -193,6 +197,37 @@ ul {
 .contact ul {
   position: relative;
 }
+
+.contact ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact ul li .text {
+  color: var(--text-color);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-bodyL);
+}
+
+.contact ul li .icon {
+  width: 20px;
+  font-size: var(--font-size-body);
+  color: var(--icon-color);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contactIcon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 5px;
+  gap: 20px;
+  margin-bottom: 40px;
+  background-color: var(--icon-background-color);
+}
+
 
 /* EDUCATION */
 
