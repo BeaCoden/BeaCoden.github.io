@@ -5,16 +5,13 @@
   --background-color-light: #b8bcbf;
   --background-color-dark: #343a40;
 
-  /* border */
-  --border-color: #ec0606;
-
   /* shadow */
   --box-shadow-img: 8px 8px 25px 0px var(--background-color-dark);
   --box-shadow-container: 0 35px 55px rgba(0, 0, 0, 0.1);
 
   /* icon */
   --icon-color: #6f6b6b;
-  --icon-background-color: #c6dff2;
+  --icon-background-color: #cdd5dc;
 
   /* font color */
   --heading-color: orange;
@@ -125,7 +122,7 @@ ul {
   max-width: 1000px;
   min-height: 1000px;
   background-color: var(--background-color-light);
-  margin: 50px;
+  margin: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: var(--box-shadow-container);
@@ -145,7 +142,7 @@ ul {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--background-color-dark);
 }
 
 .imgAndName .imgBox {
@@ -226,7 +223,10 @@ ul {
   gap: 20px;
   margin-bottom: 40px;
   background-color: var(--icon-background-color);
+  border: 2px solid var(--background-color-body);
+  border-radius: 10px;
 }
+
 
 
 /* EDUCATION */
