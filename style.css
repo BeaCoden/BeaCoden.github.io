@@ -232,14 +232,37 @@ ul {
   border-radius: 10px;
 }
 
-.contact ul li span {
-  color: #fff;
-  font-weight: 300;
+/* EDUCATION */
+.education {
+  padding-top: 10px;
 }
 
+.education li {
+  margin-bottom: 40px;
+}
 
+.education h5 {
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5em;
+}
 
-/* EDUCATION */
+.education h5:nth-child(1) {
+  color: var(--icon-color);
+  font-weight: var(--font-weight-light);
+  line-height: 2.5em;
+}
+
+.education h4 {
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+  /* border-bottom: var(--background-color-dark) 2px solid;
+  border-right: var(--background-color-dark) 2px solid; */
+  border-radius: 15px;
+  padding-right: 10px;
+  text-align: right;
+  padding-top: 5px;
+}
 
 /* LANGUAGES */
 .sectionBoxOne.language .percent {
