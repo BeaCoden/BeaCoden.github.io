@@ -1,21 +1,22 @@
 /* === ROOTS === */
 :root {
-  /* color */
-  --heading-h1-color: orange;
-  --heading-h2-color: #cc4732;
-  --heading-h3-color: #7dee40;
-  --heading-h4-color: #1900ff;
-  --heading-h5-color: #ff00b7;
-
-  --text-color: black;
-
+  /* colors */
   --background-color-body: #6f6b6b;
-  --background-color-light: #cad0d5;
+  --background-color-light: #b8bcbf;
   --background-color-dark: #343a40;
 
+  /* border */
   --border-color: #ec0606;
 
-  /* font */
+  /* shadow */
+  --box-shadow-img: 8px 8px 25px 0px var(--background-color-dark);
+  --box-shadow-container: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+  /* font color */
+  --heading-color: orange;
+  --text-color: black;
+
+  /* font family & size*/
   --font-family: 'Montserrat', sans-serif;
   --font-size-body: 1rem;
   --font-size-bodyS: 0.25rem;
@@ -27,8 +28,8 @@
   --font-size-h4: 1rem;
   --font-size-h5: 0.75rem;
   --font-size-p: 1rem;
-  --font-weight-light: 200;
-  --font-weight-regular: 400;
+  --font-weight-light: 400;
+  --font-weight-regular: 500;
   --font-weight-bold: 600;
 }
 
@@ -119,11 +120,11 @@ ul {
   width: 100%;
   max-width: 1000px;
   min-height: 1000px;
-  background-color: #fff;
+  background-color: var(--background-color-light);
   margin: 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-container);
 }
 
 /* === BODY LEFT === */
@@ -149,7 +150,7 @@ ul {
   height: 250px;
   border-radius: 10%;
   overflow: hidden;
-  box-shadow: 8px 8px 25px 0px var(--background-color-dark);
+  box-shadow: var(--box-shadow-img);
 }
 
 .imgAndName .imgBox img {
@@ -161,7 +162,37 @@ ul {
   object-fit: cover;
 }
 
+.imgAndName h1 {
+  color: var(--heading-color);
+  font-size: var(--font-size-h1);
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4em;
+}
+
+.imgAndName h1 span {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+}
+
 /* CONTACT */
+.contact {
+  padding-top: 40px;
+}
+
+.title {
+  color: var(--heading-color);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-light);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  position: relative;
+}
 
 /* EDUCATION */
 
