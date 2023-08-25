@@ -633,12 +633,17 @@ ul {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .soft ul li {
+  border-radius: 15px;
   font-family: var(--font-family);
+  background-color: #cfcbca;
+  padding: 10px 20px;
 }
 
 /* === FOOTER === */
