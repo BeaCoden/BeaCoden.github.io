@@ -162,6 +162,7 @@ ul {
   justify-items: center;
   gap: 10px;
   padding-top: 25px;
+  border-bottom: 1px solid var(--background-color-light);
 }
 
 .imgAndName .imgBox {
@@ -196,12 +197,14 @@ ul {
   text-align: center;
   font-size: 1.7rem;
   font-weight: var(--font-weight-lightbold);
+  padding-bottom: 25px;
 }
 
 /* CONTACT */
 .contact {
-  padding-top: 40px;
+  padding: 25px 0px;
   font-family: var(--font-family);
+  border-bottom: 1px solid var(--background-color-light);
 }
 
 .contact ul li {
@@ -251,15 +254,17 @@ ul {
 
 /* EDUCATION */
 .education {
-  padding-top: 40px;
+  padding: 25px 0px;
+  font-family: var(--font-family);
+  border-bottom: 1px solid var(--background-color-light);
 }
 
 .education ul {
-  padding: 10px 0;
+  padding-top: 10px 0;
 }
 
 .education li {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: center;
   line-height: 1.5;
 }
