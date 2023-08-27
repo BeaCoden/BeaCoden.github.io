@@ -160,7 +160,7 @@ ul {
   display: grid;
   justify-items: center;
   gap: 10px;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 .imgAndName .imgBox {
@@ -297,7 +297,7 @@ ul {
 
 /* LANGUAGES */
 .language {
-  padding: 25px 0px;
+  padding: 25px 0px 0px 0px;
   font-family: var(--font-family);
 }
 
@@ -351,11 +351,11 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 9px;
 }
 
 .interests ul li {
   position: relative;
-  margin: 5px 0px;
   display: flex;
   gap: 7px;
   flex-direction: column;
@@ -411,7 +411,7 @@ ul {
   color: var(--heading-h3-color);
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 20px;
+  padding-top: 19px;
 }
 
 /* SUMMARY */
