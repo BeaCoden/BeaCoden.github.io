@@ -10,11 +10,10 @@
 
   /* shadow */
   --box-shadow-img: 1px 3px 25px 2px var(--background-color-img);
-  --box-shadow-container: 0 35px 55px rgba(0, 0, 0, 0.1);
 
   /* icon */
   --icon-color: orange;
-  --icon-background-color: #fff;
+  --icon-background-color: #ffffffb5;
   --icon-font-size: 1.5rem;
 
   /* font color */
@@ -32,11 +31,12 @@
   --font-family: 'Montserrat', sans-serif;
   --font-size-h1: 2rem;
   --font-size-h2: 1.2rem;
-  --font-size-h3: 1.15rem;
+  --font-size-h3: 1.1rem;
   --font-size-h5: 1rem;
   --font-size-h6: .75rem;
-  --font-size-p: 1rem;
+  --font-size-p: .9rem;
   --font-weight-light: 400;
+  --font-weight-lightbold: 500;
   --font-weight-bold: 700;
 }
 
@@ -56,6 +56,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  scroll-behavior: smooth
 }
 
 h1,
@@ -131,7 +132,6 @@ ul {
   background-color: var(--background-color-light);
   display: grid;
   grid-template-columns: 361.5px 661.5px;
-  box-shadow: var(--box-shadow-container);
 }
 
 .tltCon {
@@ -151,7 +151,7 @@ ul {
 .cvContainer .leftSide {
   position: relative;
   background-color: var(--background-color-left);
-  padding: 30px;
+  padding: 30px 30px 30px 30px;
 }
 
 /* Profil IMG & NAME */
@@ -161,13 +161,12 @@ ul {
   justify-items: center;
   gap: 10px;
   padding-top: 25px;
-  border-bottom: 1px solid var(--background-color-light);
 }
 
 .imgAndName .imgBox {
   position: relative;
-  width: 260px;
-  height: 300px;
+  width: 220px;
+  height: 260px;
   border-radius: 20%;
   overflow: hidden;
   box-shadow: var(--box-shadow-img);
@@ -209,14 +208,12 @@ ul {
 
 .imgAndName h2 {
   text-align: center;
-  padding-bottom: 25px;
 }
 
 /* CONTACT */
 .contact {
   padding: 25px 0px;
   font-family: var(--font-family);
-  border-bottom: 1px solid var(--background-color-light);
 }
 
 .contact ul li {
@@ -231,7 +228,7 @@ ul {
 
 .contact ul li .text {
   color: var(--text-color);
-  font-size: calc(var(--font-size-p) - 0.2rem);
+  font-size: var(--font-size-p);
 }
 
 .contact ul li .icon {
@@ -245,7 +242,6 @@ ul {
 
 .contactLink {
   font-size: var(--font-size-body);
-  color: var(--text-color-dark);
   display: grid;
   cursor: pointer;
   justify-items: center;
@@ -265,35 +261,44 @@ ul {
 
 /* CERTIFICATES */
 .certificates {
-  padding: 25px 0px;
   font-family: var(--font-family);
-  border-bottom: 1px solid var(--background-color-light);
 }
 
 .certificates ul {
-  padding: 10px 15px;
+  padding: 0px 10px;
 }
 
 .certificates li {
-  text-align: right;
+  text-align: left;
   line-height: 1.5;
-  border-left: 5px solid var(--background-color-dark);
+  border-left: 1px solid var(--background-color-dark);
+  padding-left: 10px;
 }
 
 .certificates h4 {
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-lightbold);
 }
 
 .certificates p {
   font-size: calc(var(--font-size-p) - 0.2rem);
-  color: palevioletred;
+}
+
+.certLine {
+  padding: 6px 2px 3px 2px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0px var(--background-color-light);
+}
+
+.certLine i {
+  color: var(--icon-color);
 }
 
 /* LANGUAGES */
 .language {
   padding: 25px 0px;
   font-family: var(--font-family);
-  border-bottom: 1px solid var(--background-color-light);
 }
 
 .flexLang {
@@ -327,20 +332,25 @@ ul {
   right: 50px;
 }
 
+.stars i {
+  color: var(--icon-color);
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0px var(--background-color-light);
+}
+
 /* INTERESTS */
 .interests {
-  padding: 25px 0px;
   font-family: var(--font-family);
 }
 
 .interests ul {
-  padding: 10px 0px;
   list-style: none;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
-  justify-items: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .interests ul li {
@@ -355,8 +365,10 @@ ul {
 .interests .icon i {
   font-size: var(--icon-font-size);
   color: var(--icon-color);
-  border-radius: 15px;
-  background-color: var(--icon-background-color);
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0px var(--background-color-light);
   width: 65px;
   height: 65px;
   display: flex;
@@ -378,7 +390,7 @@ ul {
 .cvContainer .rightSide {
   position: relative;
   background-color: #fff;
-  padding: 30px;
+  padding: 30px 30px 30px 30px;
 }
 
 .sectionBoxTwo .title2 {
@@ -389,9 +401,6 @@ ul {
 }
 
 /* SUMMARY */
-.summary {
-  padding-top: 20px;
-}
 
 /* EXPERIENCES */
 .box {
@@ -424,10 +433,9 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
-/* soft */
-/* .soft {
-  padding-top: 20px;
-} */
+.soft h3 {
+  text-align: center;
+}
 
 .soft ul {
   padding: 15px 0px;
@@ -447,16 +455,15 @@ ul {
 }
 
 /* programm */
-/* .skills .programm {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
+.programm h3 {
+  text-align: center;
+  padding-right: 50px;
+}
 
 .svgItem {
   font-size: var(--font-size-body);
-  margin: 0 auto;
   animation: donutfade 1s;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -662,7 +669,17 @@ ul {
   }
 }
 
-
-/* === FOOTER === */
-
 /* === MEDIA QUERIES === */
+/* @media screen and (max-width: 1024px) {
+  .cvContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .cvContainer .leftSide {
+    display: none;
+  }
+
+  .cvContainer .rightSide {
+    width: 100%;
+  }
+} */
