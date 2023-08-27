@@ -178,13 +178,29 @@ ul {
   box-shadow: var(--box-shadow-img);
 }
 
-.imgAndName h1 {
-  color: var(--heading-h1-color);
-  margin-top: 0px;
-  text-transform: uppercase;
-  text-align: center;
+.imgAndName #name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   padding-top: 25px;
 }
+
+
+.imgAndName #first {
+  font-size: var(--font-size-h1);
+  color: var(--heading-h1-color);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1px;
+}
+
+.imgAndName #second {
+  font-size: var(--font-size-h1);
+  color: var(--heading-h1-color);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 
 .imgAndName h2 {
   text-align: center;
@@ -264,16 +280,11 @@ ul {
   padding-bottom: 10px;
 }
 
-.certificates h5 {
-  color: var(--text-color);
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-h5);
-}
-
-.certificates h6 {
-  color: var(--text-color);
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-h6);
+.certificates p {
+  font-size: calc(var(--font-size-p) - 0.2rem);
+  color: palevioletred;
+  padding: 0px 0px 5px 40px;
+  margin: 0;
 }
 
 /* LANGUAGES */
@@ -407,18 +418,6 @@ ul {
 .box .text {
   color: var(--text-color);
   font-size: var(--font-size-body);
-}
-
-.experiences h5 {
-  color: var(--text-color);
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-h5);
-}
-
-.experiences h6 {
-  color: var(--text-color);
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-h6);
 }
 
 /* SKILLS */
