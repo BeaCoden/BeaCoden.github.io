@@ -366,8 +366,7 @@ ul {
   font-size: var(--icon-font-size);
   color: var(--icon-color);
   background: transparent;
-  border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 7px 0px var(--background-color-light);
   width: 65px;
   height: 65px;
@@ -377,13 +376,28 @@ ul {
 }
 
 .interests ul li .text {
-  color: var(--text-color);
-  font-size: var(--font-size-bodyL);
+  color: white;
+  font-size: calc(var(--font-size-p) - 0.2rem);
   text-align: center;
 }
 
 .interHover {
-  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px;
+  background-color: var(--icon-color);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-start;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.interHover.active {
+  opacity: 1;
 }
 
 /*  === BODY RIGHT === */
