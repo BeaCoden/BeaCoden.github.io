@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
   <container class="cvContainer">
 
     <!-- === LEFT SIDE === -->
@@ -32,17 +33,18 @@
       <!-- PROFIL IMG & NAME -->
       <section class="imgAndName">
         <div class="imgBox">
-          <img src="src/profilePicture.png" alt="Profile Picture Bea Pitzschke">
+          <img src="src/bea.png" alt="Profile Picture Bea Pitzschke">
         </div>
-        <br>
-        <h1>Bea Pitzschke<br><span>Junior Frontend Developer</span></h1>
+        <div id="name">
+          <h1 id="first">Bea</h1>
+          <h1 id="second"> Pitzschke</h1>
+        </div>
+        <h2><em>jr. </em>FRONTEND DEVELOPER</h2>
       </section>
-
-      <section class="sectionBoxOne contact pdfBtn">
-
-        <!--  CONTACT -->
-        <h3 class="title">Contact</h3>
-        <ul>
+      <!--  CONTACT -->
+      <section class="sectionBoxOne contact">
+        <h3 class="title tltCon">Contact</h3>
+        <ul class="contactAddress">
           <li>
             <span class="icon"><i class="ri-map-pin-user-line"></i></span>
             <span class="text">Berlin, Germany</span>
@@ -55,6 +57,8 @@
             <span class="icon"><i class="ri-mail-send-line"></i></span>
             <span class="text">bea.pitzschke.coden@gmail.com</span>
           </li>
+        </ul>
+        <ul class="contactLink">
           <li>
             <span class="icon"><i class="ri-github-fill"></i></span>
             <a href="https://github.com/BeaCoden" class="text" title="GitHub link" target="_blank"
@@ -75,296 +79,315 @@
           </li>
         </ul>
       </section>
-      <!-- EDUCATION -->
-      <section class="sectionBoxOne education">
-        <h3 class="title">Education</h3>
-        <ul>
-          <li>
-            <h5><em>April 2023 - July 2023</em></h5>
-            <h5><em>Coding Bootcamps Europe GmbH</em></h5>
-            <h4>Junior Frontend Developer - Certificate Participant</h4>
-          </li>
-          <li>
-            <h5><em>February 2023 - April 2023</em></h5>
-            <h5><em>Udemy - The ultimate HTML5 and CSS3 complete course</em></h5>
-            <h4>Webdevelopment - Certificate Participant</h4>
-          </li>
-
-          <li>
-            <h5><em>September 2017 - August 2021</em></h5>
-            <h5><em>Vocational school for information & medical technology Berlin</em></h5>
-            <h4>Orthopedic-technology Mechanic</h4>
-          </li>
-          <li>
-            <h5><em>September 2003 - August 2006</em></h5>
-            <h5><em>Vocational schools for health, body care & social education</em></h5>
-            <h4>Medical Products Consultant</h4>
-          </li>
-          <li>
-            <h5><em>September 1991 - August 2003</em></h5>
-            <h5><em>Gutenberg secondary school</em></h5>
-            <h4>Extended high school diploma Secondary school leaving certificate</h4>
-          </li>
-        </ul>
+      <!-- CERTIFICATES -->
+      <section class="sectionBoxOne certificates">
+        <h3 class="title tltCon">Certificates</h3>
+        <div>
+          <span class="certLine">
+            <i class="ri-map-pin-time-line"></i>
+          </span>
+          <ul>
+            <li>
+              <p><em>Apr 2023 - Jul 2023</em></p>
+              <p>Coding Bootcamps Europe GmbH</p>
+              <h4>Webdeveloper</h4>
+            </li>
+          </ul>
+          <span class="certLine">
+            <i class="ri-map-pin-time-line"></i>
+          </span>
+          <ul>
+            <li>
+              <p><em>Feb 2023 - Apr 2023</em></p>
+              <p>Udemy HTML5 & CSS3 course</p>
+              <h4>Webdeveloper</h4>
+            </li>
+          </ul>
+          <span class="certLine">
+            <i class="ri-map-pin-time-line"></i>
+          </span>
+          <ul>
+            <li>
+              <p><em>Sep 2017 - Aug 2021</em></p>
+              <p>VS for IT & medical technology</p>
+              <h4>Orthopedic-technology Mechanic</h4>
+            </li>
+          </ul>
+          <span class="certLine">
+            <i class="ri-map-pin-time-line"></i>
+          </span>
+          <ul>
+            <li>
+              <p><em>Sept 2003 - Aug 2006</em></p>
+              <p>VS for health, body care & social education</p>
+              <h4>Medical Products Consultant</h4>
+            </li>
+          </ul>
+          <span class="certLine">
+            <i class="ri-map-pin-time-line"></i>
+          </span>
+          <ul>
+            <li>
+              <p><em>Sep 1991 - Aug 2003</em></p>
+              <p>Gutenberg secondary school</p>
+              <h4>Secondary school leaving certificate</h4>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- LANGUAGES -->
       <div class="sectionBoxOne language">
         <h3 class="title">Languages</h3>
-        <ul>
-          <li>
-            <span class="text">German</span>
-            <span class="percent">
-              <div class="germanw95"></div>
-            </span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <span class="text">English</span>
-            <span class="percent">
-              <div class="englishw60"></div>
-            </span>
-          </li>
-        </ul>
+        <div class="flexLang">
+          <div id="lang">
+            <ul>
+              <li>
+                <span class="text">German</span>
+              </li>
+              <li>
+                <span class="text">English</span>
+              </li>
+            </ul>
+          </div>
+          <div id="rankStar">
+            <div class="stars">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+            </div>
+            <div class="stars">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- === RIGHT SIDE === -->
     <div class="rightSide">
-      <!-- ABOUT -->
-      <section class="sectionBoxTwo about">
-        <h2 class="title2">About me</h2>
-        <p>As a dedicated junior frontend developer, I am passionate about creating engaging and user-friendly web
-          experiences. My expertise includes solid skills in HTML, CSS, and JavaScript, which I am eager to apply within
-          a collaborative team. I place great emphasis on writing code that is not only efficient but also easy to
-          maintain. My pursuit of continuous improvement is reflected in my constant engagement with the latest industry
-          trends and best practices. In addition to my theoretical expertise, I have gained practical experience in
-          agile development processes and team-based work through my final project <a
-            href="https://cbe-lostandfound.netlify.app/">Lost & Found Web App</a>
-          as well as diverse coursework.
+      <!-- SUMMARY -->
+      <section class="sectionBoxTwo summary">
+        <h2 class="title2">Summary</h2>
+        <p>
+          Dedicated web developer with a passion for coding and UX Design.
+          Proven ability to write efficient and maintainable code. Experienced in the latest industry trends and best
+          practices. Seeking a junior frontend web developer role where I can apply my skills and experience to create
+          high-quality, user-friendly web applications.
         </p>
-      </section>
-      <!-- EXPERIENCES -->
-      <section class="sectionBoxTwo experiences">
-        <h2 class="title2">Experiences</h2>
-        <div class="box">
-          <div class="yearCompany">
-            <h5>April 2023 - July 2023</h5>
-            <h5>Coding Bootcamps Europe GmbH</h5>
-          </div>
-          <div class="text">
-            <h4>Junior Frontend Developer</h4>
-            <p>Completed a rigorous 3-month "Certificate Participant Web App Development" bootcamp, covering HTML, CSS,
-              JavaScript, and Vue.js. Proficient in crafting responsive web interfaces and utilizing tools like Miro,
-              VSCode, Vue, Git and GitHub. Well-versed in SCRUM and teamwork. Experience in effective development
-              workflows, clean code, and sustainable projects. Prepared for a frontend web developer role, emphasizing
-              creativity, collaboration, and quality.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="yearCompany">
-            <h5>December 2014 - October 2022</h5>
-            <h5>FUGH Med. Pflegetechnik GmbH & Co. KG</h5>
-          </div>
-          <div class="text">
-            <h4>Orthopedic-technology Mechanic</h4>
-            <p>Experienced orthotist with extensive knowledge in the fabrication and fitting of orthotic devices.
-              Mastered precise craftsmanship and modern technologies to produce customized solutions. Demonstrated
-              skills in collaboration with patients, medical professionals, and team members. Committed to providing
-              high-quality orthotic products for optimal patient comfort and mobility.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="yearCompany">
-            <h5>August 2006 - November 2014</h5>
-            <h5>FUGH Med. Pflegetechnik GmbH & Co. KG</h5>
-          </div>
-          <div class="text">
-            <h4>Medical Products Consultant</h4>
-            <p>Skilled healthcare management assistant with a solid foundation in administrative workflows and processes
-              in the medical environment. Effective organization of patient data, billing, and scheduling. Proven
-              ability to communicate efficiently with patients, medical staff, and insurance companies. Committed to
-              ensuring smooth operations and a patient-centered experience in healthcare.</p>
-          </div>
-        </div>
       </section>
 
       <!-- SKILLS -->
       <section class="sectionBoxTwo skills">
-        <!-- professional -->
-        <h2 class="title2">programming Skills</h2>
-        <div class="svgItem html">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentHtml" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextHtml">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">HTML</tspan>
-              </text>
-            </g>
-          </svg>
+        <!-- hard -->
+        <div class="programm">
+          <h3 class="title2">hard Skills</h3>
+          <div class="svgItem html">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentHtml" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextHtml">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">HTML</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem css">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentCss" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="75 25" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextCss">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">CSS</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem javascript">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentJavaScript" cx="20" cy="20" r="15.91549430918954"
+                fill="transparent" stroke-width="3.5" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextJavaScript">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">JavaScript</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem npm">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentNpm" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="45 55" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextNpm">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">npm</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem github">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentGitHub" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="90 10" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextGitHub">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">GitHub</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem git">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentGit" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextGit">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">git</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem vue">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentVue" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="20 80" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextVue">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">Vue.js</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="svgItem devTools">
+            <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
+              <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
+              <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
+              </circle>
+              <circle class="donutSegment donutSegmentDevTools" cx="20" cy="20" r="15.91549430918954" fill="transparent"
+                stroke-width="3.5" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+              <g class="donutText donutTextDevTools">
+                <text y="50%" transform="translate(0, 2)">
+                  <tspan x="50%" text-anchor="middle" class="donutPercent">DevTools</tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
         </div>
-        <div class="svgItem css">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentCss" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="65 35" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextCss">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">CSS</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem tailwindCss">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentTailwindCss" cx="20" cy="20" r="15.91549430918954"
-              fill="transparent" stroke-width="3.5" stroke-dasharray="5 95" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextTailwindCss">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">Tailwind</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem javascript">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentJavaScript" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextJavaScript">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">JavaScript</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem npm">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentNpm" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="45 55" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextNpm">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">npm</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem github">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentGitHub" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="90 10" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextGitHub">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">GitHub</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem git">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentGit" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextGit">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">git</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem vue">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentVue" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="20 80" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextVue">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">Vue</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="svgItem devTools">
-          <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
-            <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
-            <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
-            </circle>
-            <circle class="donutSegment donutSegmentDevTools" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-              stroke-width="3.5" stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
-            <g class="donutText donutTextDevTools">
-              <text y="50%" transform="translate(0, 2)">
-                <tspan x="50%" text-anchor="middle" class="donutPercent">DevTools</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-
         <!-- soft -->
         <div class="soft">
-          <h2>soft Skills</h2>
+          <h3 class="title2">soft Skills</h3>
           <ul>
             <li>Sociable & open communicative</li>
+            <li>Solution-oriented problem solver</li>
             <li>Teamplayer</li>
-            <li>Problem solving</li>
-            <li>Open mindedness</li>
-            <li>Adaptability</li>
+            <li>Open minded</li>
+            <li>Organized</li>
+            <li>Reliable</li>
+            <li>Adaptable</li>
           </ul>
         </div>
       </section>
 
+      <!-- EXPERIENCES -->
+      <section class="sectionBoxTwo experiences">
+        <h2 class="title2">Experiences</h2>
+        <div class="box">
+          <div class="date">
+            <p><em>Apr 2023 - Jul 2023 </em></p>
+            <p>Coding Bootcamps Europe GmbH</p>
+          </div>
+          <div class="text">
+            <h3>Webdeveloper</h3>
+            <p>Junior Expertise in HTML, CSS, JavaScript, Vue.js, agile development, SCRUM &
+              collaboration. Experience with efficient development processes, clean coding & sustainable
+              projects. Proven ability to work independently & as part of a team. Developed a <a class="laf"
+                href="https://cbe-lostandfound.netlify.app/">"Lost & Found"</a>Web App as a final project.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="date">
+            <p><em>Dec 2014 - Oct 2022</em></p>
+            <p>FUGH Medizinische Pflegetechnik GmbH & Co. KG</p>
+          </div>
+          <div class="text">
+            <h3>Orthopedic-technology Mechanic</h3>
+            <p>Skilled orthotist with expertise in orthotic fabrication & fitting.
+              Creates customized solutions using precise craftsmanship & modern technologies.
+              Committed to providing high-quality orthotics for patient comfort & mobility.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="date">
+            <p><em>Aug 2006 - Nov 2014</em></p>
+            <p>FUGH Medizinische Pflegetechnik GmbH & Co. KG</p>
+          </div>
+          <div class="text">
+            <h3>Medical Products Consultant</h3>
+            <p>Experienced healthcare management assistant with strong medical administrative skills.
+              Ensures smooth operations & patient-centered experience by organizing patient data, billing & scheduling
+              efficiently.
+              Excellent communication skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- INTERESTS -->
-      <section class="sectionBoxTwo interest">
+      <section class="sectionBoxTwo interests">
         <h2 class="title2">Interests</h2>
         <ul>
           <li>
             <span class="icon"><i class="fas fa-laptop-code"></i></span>
-            <span class="text">Coding</span>
-          </li>
-          <li>
-            <span class="icon"><i class="fas fa-cat"></i></span>
-            <span class="text">Playing with my 2 lovely Cats</span>
+            <span class="text interHover">Coding</span>
           </li>
           <li>
             <span class="icon"><i class="fa-solid fa-plate-wheat"></i></span>
-            <span class="text">Cooking</span>
+            <span class="text interHover">Cooking</span>
           </li>
           <li>
             <span class="icon"><i class="fas fa-hiking"></i></span>
-            <span class="text">Going for a walk</span>
+            <span class="text interHover">Going for a walk</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fas fa-cat"></i></span>
+            <span class="text interHover">Playing with my 2 lovely cats</span>
           </li>
         </ul>
       </section>
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-      <p class="copyright">
-        &copy; 2023 Bea Pitzschke
-      </p>
-    </footer>
   </container>
+
   <script src="script.js"></script>
+
 </body>
 
 </html>
