@@ -10,6 +10,6 @@ A brief Portfolio Webiste of my...
 
 ## Project Status
 
-- [ ] Ongoing :construction:
-<!-- - [ ] Completed :white_check_mark:
-- [ ] On hold :hourglass_flowing_sand: -->
+<!-- - [ ] Ongoing :construction: -->
+- [ ] Completed :white_check_mark:
+<!-- - [ ] On hold :hourglass_flowing_sand: -->
