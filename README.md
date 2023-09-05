@@ -2,10 +2,10 @@
 
 ## Description
 
-A brief Portfolio Webiste of my...
+This is my CV, here you can find my personal information and ...
 
 - [ ] educations :books:
-- [ ] qualifications :star:
+- [ ] qualifications and skills :star:
 - [ ] previous job experiences :computer:
 
 ## Project Status
