@@ -222,7 +222,7 @@ ul {
   margin: 5px 0px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   justify-content: space-between;
 }
 
@@ -240,12 +240,19 @@ ul {
   cursor: pointer;
 }
 
+.contact ul li a {
+  padding-left: 5px;
+
+}
+
 .contactLink {
   font-size: var(--font-size-body);
   display: grid;
   cursor: pointer;
-  justify-items: center;
+  justify-items: start;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: start;
+  gap: 15px;
 }
 
 .contactAddress {
@@ -351,7 +358,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 9px;
+  padding-top: 20px;
 }
 
 .interests ul li {
@@ -411,10 +418,8 @@ ul {
   color: var(--heading-h3-color);
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 19px;
+  padding-top: 15px;
 }
-
-/* SUMMARY */
 
 /* EXPERIENCES */
 .box {
@@ -447,11 +452,11 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
-.soft h3 {
+#soft h3 {
   text-align: center;
 }
 
-.soft ul {
+#soft ul {
   padding: 15px 0px;
   position: relative;
   display: flex;
@@ -461,7 +466,7 @@ ul {
   gap: 10px;
 }
 
-.soft ul li {
+#soft ul li {
   border-radius: 15px;
   font-family: var(--font-family);
   background-color: var(--background-color-left);
@@ -469,7 +474,7 @@ ul {
 }
 
 /* programm */
-.programm h3 {
+#programm h3 {
   text-align: center;
   padding-right: 50px;
 }
@@ -684,16 +689,31 @@ ul {
 }
 
 /* === MEDIA QUERIES === */
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .cvContainer {
     grid-template-columns: 1fr;
   }
 
-  .cvContainer .leftSide {
-    display: none;
-  }
-
   .cvContainer .rightSide {
     width: 100%;
+    padding: 0px 30px 30px 30px;
   }
-} */
+
+  .cvContainer .leftSide {
+    width: 100%;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  #programm,
+  #soft h2 {
+    text-align: left;
+  }
+
+  .box .date p {
+    padding-top: 5px;
+    font-size: calc(var(--font-size-p) - 0.3rem);
+  }
+}
