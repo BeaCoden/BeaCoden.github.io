@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- FAVICON -->
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <!-- CHART JS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- HTML2PDF -->
@@ -26,14 +26,14 @@
 
 <body>
 
-  <container class="cvContainer">
+  <div class="cvContainer">
 
     <!-- === LEFT SIDE === -->
     <div class="leftSide">
       <!-- PROFIL IMG & NAME -->
       <section class="imgAndName">
         <div class="imgBox">
-          <img src="src/bea.png" alt="Profile Picture Bea Pitzschke">
+          <img src="src/bea.png" alt="Profile Picture Bea Pitzschke" aria-label="Profile Picture Bea Pitzschke">
         </div>
         <div id="name">
           <h1 id="first">Bea</h1>
@@ -60,24 +60,25 @@
         </ul>
         <ul class="contactLink">
           <li>
-            <span class="icon"><i class="ri-github-fill"></i></span>
-            <a href="https://github.com/BeaCoden" class="text" title="GitHub link" target="_blank"
-              rel="noopener">GitHub</a>
-            <span class="text"></span>
+            <span class="icon"><i class="ri-linkedin-box-fill"></i><a href="https://www.linkedin.com/in/beapitzschke"
+                class="text" title="LinkedIn Link" target="_blank" rel="noopener"
+                aria-label="LinkedIn Profile Bea Pitzschke">LinkedIn</a></span>
+
           </li>
           <li>
-            <span class="icon"><i class="ri-linkedin-box-fill"></i></span>
-            <a href="https://www.linkedin.com/in/beapitzschke" class="text" title="LinkedIn link" target="_blank"
-              rel="noopener">LinkedIn</a>
-            <span class="text"></span>
+            <span class="icon"><i class="ri-codepen-line"></i><a href="https://codepen.io/BeaCoden" class="text"
+                title="CodePen Link" target="_blank" rel="noopener"
+                aria-label="CodePen Profile Bea Pitzschke">CodePen</a></span>
+
           </li>
           <li>
-            <span class="icon"><i class="ri-codepen-line"></i></span>
-            <a href="https://codepen.io/BeaCoden" class="text" title="CodePen link" target="_blank"
-              rel="noopener">CodePen</a>
-            <span class="text"></span>
+            <span class="icon"><i class="ri-github-fill"></i><a href="https://github.com/BeaCoden" class="text"
+                title="GitHub Link" target="_blank" rel="noopener"
+                aria-label="GitHub Profile Bea Pitzschke">GitHub</a></span>
+
           </li>
         </ul>
+
       </section>
       <!-- CERTIFICATES -->
       <section class="sectionBoxOne certificates">
@@ -89,7 +90,8 @@
           <ul>
             <li>
               <p><em>Apr 2023 - Jul 2023</em></p>
-              <p><a href="https://www.coding-bootcamps.eu/" target="_blank" rel="noopener">Coding Bootcamps Europe
+              <p><a href="https://www.coding-bootcamps.eu/" target="_blank" rel="noopener" title="CBE Link">Coding
+                  Bootcamps Europe
                   GmbH</a></p>
               <h4>Webdeveloper</h4>
             </li>
@@ -101,7 +103,7 @@
             <li>
               <p><em>Feb 2023 - Apr 2023</em></p>
               <p><a href="https://www.udemy.com/course/der-ultimative-html5-und-css3-komplettkurs" target="_blank"
-                  rel="noopener">Udemy HTML5 & CSS3 course</a></p>
+                  rel="noopener" title="Udemy Link">Udemy HTML5 & CSS3 course</a></p>
               <h4>Webdeveloper</h4>
             </li>
           </ul>
@@ -111,7 +113,8 @@
           <ul>
             <li>
               <p><em>Sep 2017 - Aug 2021</em></p>
-              <p><a href="https://www.oszimt.de/" target="_blank" rel="noopener">VS for IT & medical technology</a></p>
+              <p><a href="https://www.oszimt.de/" target="_blank" rel="noopener" title="School Link">VS for IT & medical
+                  technology</a></p>
               <h4>Orthopedic-technology Mechanic</h4>
             </li>
           </ul>
@@ -121,8 +124,8 @@
           <ul>
             <li>
               <p><em>Sept 2003 - Aug 2006</em></p>
-              <p><a href="https://www.bbs5-halle.bildung-lsa.de/" target="_blank" rel="noopener">VS for health, body
-                  care & social education</a></p>
+              <p><a href="https://www.bbs5-halle.bildung-lsa.de/" target="_blank" rel="noopener" title="School Link">VS
+                  for health, body care & social education</a></p>
               <h4>Medical Products Consultant</h4>
             </li>
           </ul>
@@ -188,8 +191,8 @@
       <!-- SKILLS -->
       <section class="sectionBoxTwo skills">
         <!-- hard -->
-        <div class="programm">
-          <h3 class="title2">hard Skills</h3>
+        <div id="programm">
+          <h2 class="title2">hard Skills</h2>
           <div class="svgItem html">
             <svg width="100px" height="100px" viewBox="0 0 40 40" class="donut">
               <circle class="donutHole" cx="20" cy="20" r="15.91549430918954" fill="transparent"></circle>
@@ -224,7 +227,7 @@
               <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
               </circle>
               <circle class="donutSegment donutSegmentJavaScript" cx="20" cy="20" r="15.91549430918954"
-                fill="transparent" stroke-width="3.5" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
+                fill="transparent" stroke-width="3.5" stroke-dasharray="50 50" stroke-dashoffset="25"></circle>
               <g class="donutText donutTextJavaScript">
                 <text y="50%" transform="translate(0, 2)">
                   <tspan x="50%" text-anchor="middle" class="donutPercent">JavaScript</tspan>
@@ -280,7 +283,7 @@
               <circle class="donutRing" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3.5">
               </circle>
               <circle class="donutSegment donutSegmentVue" cx="20" cy="20" r="15.91549430918954" fill="transparent"
-                stroke-width="3.5" stroke-dasharray="20 80" stroke-dashoffset="25"></circle>
+                stroke-width="3.5" stroke-dasharray="30 70" stroke-dashoffset="25"></circle>
               <g class="donutText donutTextVue">
                 <text y="50%" transform="translate(0, 2)">
                   <tspan x="50%" text-anchor="middle" class="donutPercent">Vue.js</tspan>
@@ -304,11 +307,11 @@
           </div>
         </div>
         <!-- soft -->
-        <div class="soft">
-          <h3 class="title2">soft Skills</h3>
+        <div id="soft">
+          <h2 class="title2">soft Skills</h2>
           <ul>
             <li>Sociable & open communicative</li>
-            <li>Solution-oriented problem solver</li>
+            <li>Solution-oriented <br>problem solver</li>
             <li>Teamplayer</li>
             <li>Open minded</li>
             <li>Organized</li>
@@ -324,22 +327,26 @@
         <div class="box">
           <div class="date">
             <p><em>Apr 2023 - Jul 2023 </em></p>
-            <p><a href="https://www.coding-bootcamps.eu/" target="_blank" rel="noopener">Coding Bootcamps Europe
+            <p><a href="https://www.coding-bootcamps.eu/" target="_blank" rel="noopener" title="CBE Link">Coding
+                Bootcamps Europe
                 GmbH</a></p>
           </div>
           <div class="text">
             <h3>Webdeveloper</h3>
-            <p>Junior Expertise in HTML, CSS, JavaScript, Vue.js, agile development, SCRUM &
+            <p>Developed a <a class="laf" href="https://cbe-lostandfound.netlify.app/" target="_blank" rel="noopener"
+                title="cbe-lostandfound Link">"Lost & Found"</a> web app as
+              part of my graduation requirements from coding bootcamp. Junior Expertise in HTML, CSS, JavaScript,
+              Vue.js, agile development, SCRUM &
               collaboration. Experience with efficient development processes, clean coding & sustainable
-              projects. Proven ability to work independently & as part of a team. Developed a <a class="laf"
-                href="https://cbe-lostandfound.netlify.app/">"Lost & Found"</a> Web App as a final project.
+              projects. Proven ability to work independently & as part of a team.
             </p>
           </div>
         </div>
         <div class="box">
           <div class="date">
             <p><em>Dec 2014 - Oct 2022</em></p>
-            <p><a href="https://www.fugh.de/" target="_blank" rel="noopener">FUGH Med. Pflegetechnik GmbH & Co.
+            <p><a href="https://www.fugh.de/" target="_blank" rel="noopener" title="FUGH Link">FUGH Med. Pflegetechnik
+                GmbH & Co.
                 KG</a></p>
           </div>
           <div class="text">
@@ -352,7 +359,8 @@
         <div class="box">
           <div class="date">
             <p><em>Aug 2006 - Nov 2014</em></p>
-            <p><a href="https://www.fugh.de/" target="_blank" rel="noopener">FUGH Med. Pflegetechnik GmbH & Co.
+            <p><a href="https://www.fugh.de/" target="_blank" rel="noopener" title="FUGH Link">FUGH Med. Pflegetechnik
+                GmbH & Co.
                 KG</a></p>
           </div>
           <div class="text">
@@ -370,25 +378,25 @@
         <h2 class="title2">Interests</h2>
         <ul>
           <li>
-            <span class="icon"><i class="fas fa-laptop-code"></i></span>
+            <span class="icon" title="Computer and Code Icon"><i class="fas fa-laptop-code"></i></span>
             <span class="text interHover">Coding & Design</span>
           </li>
           <li>
-            <span class="icon"><i class="fa-solid fa-plate-wheat"></i></span>
+            <span class="icon" title="Bake & Cook Icon"><i class="fa-solid fa-plate-wheat"></i></span>
             <span class="text interHover">Baking & Cooking</span>
           </li>
           <li>
-            <span class="icon"><i class="fas fa-hiking"></i></span>
+            <span class="icon" title="Walking person Icon"><i class="fas fa-hiking"></i></span>
             <span class="text interHover">Going for a walk</span>
           </li>
           <li>
-            <span class="icon"><i class="fas fa-cat"></i></span>
+            <span class="icon" title="Cat icon"><i class="fas fa-cat"></i></span>
             <span class="text interHover">Pet my lovely 2 cats</span>
           </li>
         </ul>
       </section>
     </div>
-  </container>
+  </div>
 
   <script src="script.js"></script>
 
