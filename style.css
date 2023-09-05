@@ -266,6 +266,18 @@ ul {
   align-items: flex-start;
 }
 
+/* Mail */
+#email {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#email:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* CERTIFICATES */
 .certificates {
   font-family: var(--font-family);
