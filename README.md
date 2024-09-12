@@ -12,4 +12,4 @@ This is my CV, here you can find my personal information and ...
 
 ## Project Status
 
-- [ ] Completed :white_check_mark:
+- [ ] ongoing 🏗️🛠️
