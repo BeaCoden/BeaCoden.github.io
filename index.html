@@ -1,617 +1,270 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible"
-        content="ie=edge">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <!-- FAVICON -->
-  <link rel="shortcut icon"
-        href="img/favicon.png"
-        type="image/x-icon">
-  <!-- FONT -->
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
-        rel="stylesheet">
-  <!-- ICONS -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- CUSTOM CSS -->
-  <link rel="stylesheet"
-        href="style.css">
-  <!-- CHART JS -->
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <!-- SEO Meta Tags -->
+  <meta
+    name="description"
+    content="Bea Pitzschke – Junior Frontend Developer, die mit über 16 Jahren Erfahrung im Gesundheitswesen (kaufmännisch & handwerklich) nun moderne Webentwicklung (HTML, CSS, JavaScript, React.js & Vue.js) lebt."
+  >
+  <meta
+    name="keywords"
+    content="Junior Frontend Developer, Webentwicklung, React.js, Vue.js, JavaScript, HTML, CSS, Agile, Bootcamp, Healthcare, Karrierewechsel"
+  >
+  <!-- Favicon -->
+  <link
+    rel="shortcut icon"
+    href="img/favicon.png"
+    type="image/x-icon"
+  >
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <!-- Icons (Remixicon und Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  >
+  <!-- Custom CSS -->
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  >
+  <!-- Chart.js (falls benötigt) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- HTML2PDF -->
-
-
-  <title>Bea Pitzschke CV</title>
+  <title>Bea Pitzschke | Junior Developer</title>
 </head>
 
 <body>
-
-  <div class="cvContainer">
-
-    <!-- === LEFT SIDE === -->
-    <div class="leftSide">
-      <!-- PROFIL IMG & NAME -->
-      <section class="imgAndName">
-        <div class="imgBox">
-          <img src="src/bea.png"
-               alt="Profile Picture Bea Pitzschke"
-               aria-label="Profile Picture Bea Pitzschke">
+  <div class="cv-container">
+    <!-- SIDEBAR -->
+    <aside class="cv-sidebar">
+      <!-- Profil -->
+      <section class="profile-section">
+        <div class="profile-image">
+          <img
+            src="src/bea.png"
+            alt="Profilbild von Bea Pitzschke"
+          >
         </div>
-        <div id="name">
-          <h1 id="first">Bea</h1>
-          <h1 id="second"> Pitzschke</h1>
+        <div class="profile-name">
+          <h1>Bea Pitzschke</h1>
+          <h2>Junior Developer</h2>
         </div>
-        <h2><em>junior </em>WEBDEVELOPER</h2>
       </section>
-      <!--  CONTACT -->
-      <section class="sectionBoxOne contact">
-        <h3 class="title tltCon">Kontakt</h3>
-        <ul class="contactAddress">
+      <!-- Kontakt -->
+      <section class="contact-section">
+        <h3>Kontakt</h3>
+        <ul class="contact-details">
+          <li><i class="ri-map-pin-user-line"></i> Berlin, Deutschland</li>
+          <li><i class="ri-cellphone-line"></i> 0176 64 38 54 97</li>
+          <li><i class="ri-mail-send-line"></i> <a
+              href="mailto:bea.pitzschke.coden@gmail.com">bea.pitzschke.coden@gmail.com</a></li>
+        </ul>
+        <ul class="social-links">
+          <li><a
+              href="https://www.linkedin.com/in/beapitzschke"
+              target="_blank"
+              rel="noopener"
+              title="LinkedIn Profil"
+            ><i class="ri-linkedin-box-fill"></i> LinkedIn</a></li>
+          <li><a
+              href="https://github.com/BeaCoden"
+              target="_blank"
+              rel="noopener"
+              title="GitHub Profil"
+            ><i class="ri-github-fill"></i> GitHub</a></li>
+        </ul>
+      </section>
+      <!-- Zertifikate & Abschlüsse -->
+      <section class="certificates-section">
+        <h3>Zertifikate & Abschlüsse</h3>
+        <ul class="certificates-list">
           <li>
-            <span class="icon"><i class="ri-map-pin-user-line"></i></span>
-            <span class="text">Berlin, Deutschland</span>
+            <span class="date">Januar 2025</span>
+            <a
+              href="https://www.udemy.com/certificate/UC-d627c832-ec97-4aad-b71e-ef8de978eb78/"
+              target="_blank"
+              rel="noopener"
+            >Udemy React.js & TypeScript</a>
+            <p>Front-End Webentwicklung</p>
           </li>
           <li>
-            <span class="icon"><i class="ri-cellphone-line"></i></span>
-            <span class="text">0176 64 38 54 97</span>
+            <span class="date">Januar 2025</span>
+            <a
+              href="https://www.udemy.com/certificate/UC-1928dc3e-3c34-4b64-97ef-c3cc46216488/"
+              target="_blank"
+              rel="noopener"
+            >Udemy HTML5 & CSS3</a>
+            <p>Front-End Webentwicklung</p>
           </li>
           <li>
-            <span class="icon"><i class="ri-mail-send-line"></i></span>
-            <span class="text"
-                  id="email">bea.pitzschke.coden@gmail.com</span>
+            <span class="date">Apr 2023 - Jul 2023</span>
+            <a
+              href="https://www.coding-bootcamps.eu/"
+              target="_blank"
+              rel="noopener"
+            >Coding Bootcamps Europe GmbH</a>
+            <p>Webentwicklungs</p>
+          </li>
+          <li>
+            <span class="date">Sep 2017 - Aug 2021</span>
+            <a
+              href="https://www.oszimt.de/"
+              target="_blank"
+              rel="noopener"
+            >BS für Informations- & Medizintechnik</a>
+            <p>Orthopädietechnik-Mechanikerin</p>
+          </li>
+          <li>
+            <span class="date">Sep 2003 - Aug 2006</span>
+            <a
+              href="https://www.bbs5-halle.bildung-lsa.de/"
+              target="_blank"
+              rel="noopener"
+            >BS für Körper, Gesundheit & Soziales</a>
+            <p>Kauffrau-Gesundheitswesen</p>
           </li>
         </ul>
-        <ul class="contactLink">
-          <li>
-            <span class="icon"><i class="ri-linkedin-box-fill"></i><a href="https://www.linkedin.com/in/beapitzschke"
-                 class="text"
-                 title="LinkedIn Link"
-                 target="_blank"
-                 rel="noopener"
-                 aria-label="LinkedIn Profile Bea Pitzschke">LinkedIn</a></span>
-
-          </li>
-          <li>
-            <span class="icon"><i class="ri-codepen-line"></i><a href="https://codepen.io/BeaCoden"
-                 class="text"
-                 title="CodePen Link"
-                 target="_blank"
-                 rel="noopener"
-                 aria-label="CodePen Profile Bea Pitzschke">CodePen</a></span>
-
-          </li>
-          <li>
-            <span class="icon"><i class="ri-github-fill"></i><a href="https://github.com/BeaCoden"
-                 class="text"
-                 title="GitHub Link"
-                 target="_blank"
-                 rel="noopener"
-                 aria-label="GitHub Profile Bea Pitzschke">GitHub</a></span>
-
-          </li>
+      </section>
+      <!-- Sprachen -->
+      <section class="languages-section">
+        <h3>Sprachen</h3>
+        <ul class="languages-list">
+          <li>Deutsch <span class="stars"><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></span></li>
+          <li>Englisch <span class="stars"><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-half-s-line"
+              ></i><i class="ri-star-s-line"></i></span></li>
         </ul>
-
       </section>
-      <!-- CERTIFICATES -->
-      <section class="sectionBoxOne certificates">
-        <h3 class="title tltCon">Zertifikate</h3>
-        <div>
-          <span class="certLine">
-            <i class="ri-map-pin-time-line"></i>
-          </span>
-          <ul>
-            <li>
-              <p><em>Apr 2023 - Jul 2023</em></p>
-              <p><a href="https://www.coding-bootcamps.eu/"
-                   target="_blank"
-                   rel="noopener"
-                   title="CBE Link">Coding
-                  Bootcamps Europe
-                  GmbH</a></p>
-              <h4>Webdeveloper</h4>
-            </li>
-          </ul>
-          <span class="certLine">
-            <i class="ri-map-pin-time-line"></i>
-          </span>
-          <ul>
-            <li>
-              <p><em>Feb 2023 - Apr 2023</em></p>
-              <p><a href="https://www.udemy.com/course/der-ultimative-html5-und-css3-komplettkurs"
-                   target="_blank"
-                   rel="noopener"
-                   title="Udemy Link">Udemy HTML5 & CSS3 Kurs</a></p>
-              <h4>Webdeveloper</h4>
-            </li>
-          </ul>
-          <span class="certLine">
-            <i class="ri-map-pin-time-line"></i>
-          </span>
-          <ul>
-            <li>
-              <p><em>Sep 2017 - Aug 2021</em></p>
-              <p><a href="https://www.oszimt.de/"
-                   target="_blank"
-                   rel="noopener"
-                   title="School Link">BS für Informations-& Medizintechnik</a></p>
-              <h4>Orthopädietechnik-Mechanikerin</h4>
-            </li>
-          </ul>
-          <span class="certLine">
-            <i class="ri-map-pin-time-line"></i>
-          </span>
-          <ul>
-            <li>
-              <p><em>Sept 2003 - Aug 2006</em></p>
-              <p><a href="https://www.bbs5-halle.bildung-lsa.de/"
-                   target="_blank"
-                   rel="noopener"
-                   title="School Link">BS für Körper, Gesundheit & Soziales</a></p>
-              <h4>Kauffrau-Gesundheitswesen</h4>
-            </li>
-          </ul>
-          <span class="certLine">
-            <i class="ri-map-pin-time-line"></i>
-          </span>
-          <ul>
-            <li>
-              <p><em>Sep 1991 - Aug 2003</em></p>
-              <p>Gutenberg Sekundarschule</p>
-              <h4>Realschulabschluss</h4>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- LANGUAGES -->
-      <div class="sectionBoxOne language">
-        <h3 class="title">Sprachen</h3>
-        <div class="flexLang">
-          <div id="lang">
-            <ul>
-              <li>
-                <span class="text">Deutsch</span>
-              </li>
-              <li>
-                <span class="text">Englisch</span>
-              </li>
-            </ul>
-          </div>
-          <div id="rankStar">
-            <div class="stars">
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-            </div>
-            <div class="stars">
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-half-s-line"></i>
-              <i class="ri-star-s-line"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- === RIGHT SIDE === -->
-    <div class="rightSide">
-      <!-- SUMMARY -->
-      <section class="sectionBoxTwo summary">
-        <h2 class="title2">Über mich</h2>
-        <p> Engagiert mit Leidenschaft für Webentwicklung. Fähigkeit effizienten & wartbaren Code zu schreiben. Erfahren in neuesten Branchentrends.
-          Auf der Suche nach einer Position als Junior-Webentwicklerin, wo ich meine Fähigkeiten & Erfahrungen einsetzen kann, um hochwertige,
-          benutzerfreundliche Webanwendungen zu entwickeln.
+    </aside>
+    <!-- HAUPTINHALT -->
+    <main class="cv-main">
+      <!-- Über mich -->
+      <section class="about-section">
+        <h2>Über mich</h2>
+        <p>
+          Engagierte Junior Frontend Developerin, die moderne Webtechnologien (HTML, CSS,
+          JavaScript, React.js & Vue.js) mit über 16 Jahren Erfahrung im Gesundheitswesen verbindet.
+          Meine kaufmännischen und handwerklichen Kompetenzen aus dem Gesundheitsbereich fließen in
+          strukturiertes, lösungsorientiertes Arbeiten und kreatives UI/UX-Design ein – ideal für
+          die Entwicklung benutzerfreundlicher Webanwendungen.
         </p>
       </section>
-
-      <!-- SKILLS -->
-      <section class="sectionBoxTwo skills">
-        <!-- hard -->
-        <div id="programm">
-          <h2 class="title2">hard Skills</h2>
-          <div class="svgItem html">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentHtml"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="85 15"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextHtml">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">HTML</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem css">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentCss"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="75 25"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextCss">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">CSS</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem javascript">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentJavaScript"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="50 50"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextJavaScript">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">JavaScript</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem npm">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentNpm"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="45 55"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextNpm">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">npm</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem github">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentGitHub"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="90 10"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextGitHub">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">GitHub</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem git">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentGit"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="60 40"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextGit">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">git</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem vue">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentVue"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="30 70"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextVue">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">Vue.js</tspan>
-                </text>
-              </g>
-            </svg>
-          </div>
-          <div class="svgItem devTools">
-            <svg width="100px"
-                 height="100px"
-                 viewBox="0 0 40 40"
-                 class="donut">
-              <circle class="donutHole"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"></circle>
-              <circle class="donutRing"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5">
-              </circle>
-              <circle class="donutSegment donutSegmentDevTools"
-                      cx="20"
-                      cy="20"
-                      r="15.91549430918954"
-                      fill="transparent"
-                      stroke-width="3.5"
-                      stroke-dasharray="60 40"
-                      stroke-dashoffset="25"></circle>
-              <g class="donutText donutTextDevTools">
-                <text y="50%"
-                      transform="translate(0, 2)">
-                  <tspan x="50%"
-                         text-anchor="middle"
-                         class="donutPercent">DevTools</tspan>
-                </text>
-              </g>
-            </svg>
+      <!-- Skills -->
+      <section class="skills-section">
+        <div class="hard-skills">
+          <h2>Hard Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-item"><i class="fab fa-html5"></i> HTML & CSS (Flexbox, Grid)</div>
+            <div class="skill-item"><i class="fab fa-js"></i> JavaScript (ES6+, APIs)</div>
+            <div class="skill-item"><i class="fab fa-react"></i> React.js & TypeScript</div>
+            <div class="skill-item"><i class="fab fa-vuejs"></i> Vue.js (Router, Vuex)</div>
+            <div class="skill-item"><i class="fas fa-code-branch"></i> Git & GitHub (CI/CD)</div>
+            <div class="skill-item"><i class="fab fa-npm"></i> npm & moderne Webtools</div>
+            <div class="skill-item"><i class="fas fa-cogs"></i> Agile Methoden (SCRUM, Kanban)</div>
           </div>
         </div>
-        <!-- soft -->
-        <div id="soft">
-          <h2 class="title2">soft Skills</h2>
-          <ul>
-            <li>gesellig & offen kommunikativ</li>
-            <li>lösungsorientierte Problemlöserin</li>
-            <li>Teamplayer</li>
-            <li>open minded</li>
-            <li>organisiert & strukturiert</li>
-            <li>zuverlässig</li>
-            <li>anpassungsfähig</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- EXPERIENCES -->
-      <section class="sectionBoxTwo experiences">
-        <h2 class="title2">Werdegang</h2>
-        <div class="box">
-          <div class="date">
-            <p><em>Apr 2023 - Jul 2023 </em></p>
-            <p><a href="https://www.coding-bootcamps.eu/"
-                 target="_blank"
-                 rel="noopener"
-                 title="CBE Link">Coding
-                Bootcamps Europe
-                GmbH</a></p>
-          </div>
-          <div class="text">
-            <h3>Webdeveloper</h3>
-            <p>Team-Abschlussarbeit war eine <a class="laf"
-                 href="https://cbe-lostandfound.netlify.app/"
-                 target="_blank"
-                 rel="noopener"
-                 title="cbe-lostandfound Link">"Lost & Found"</a> Web-App. Junior-Expertise in HTML, CSS, JavaScript,
-              Vue.js, agile Entwicklung & SCRUM, mit effizienten Entwicklungsprozessen, sauberem Coding & Nachhaltigkeit
-              in Projekten, sowie Fähigkeit - selbstständig & im Team zu arbeiten.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="date">
-            <p><em>Dez 2014 - Okt 2022</em></p>
-            <p><a href="https://www.fugh.de/"
-                 target="_blank"
-                 rel="noopener"
-                 title="FUGH Link">FUGH Med. Pflegetechnik
-                GmbH & Co.
-                KG</a></p>
-          </div>
-          <div class="text">
-            <h3>Orthopädietechnik-Mechanikerin</h3>
-            <p>Als Orthopädietechnik-Mechanikerin Erfahrung in Herstellung & Anpassung individueller
-              Orthesen. Expertise kombiniert präzise Handwerksfähigkeiten mit modernsten Technologien, um maßgeschneiderte Lösungen
-              zu schaffen.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="date">
-            <p><em>Aug 2006 - Nov 2014</em></p>
-            <p><a href="https://www.fugh.de/"
-                 target="_blank"
-                 rel="noopener"
-                 title="FUGH Link">FUGH Med. Pflegetechnik
-                GmbH & Co.
-                KG</a></p>
-          </div>
-          <div class="text">
-            <h3>Kauffrau im Gesundheitswesen</h3>
-            <p>Als Kauffrau im Gesundheitswesen, spezialisiert auf administrative Aufgaben im Sanitätshaus, verantwortlich für
-              um effizienten, reibungslosen Betriebsablauf & ein kundenorientiertes Serviceerlebnis zu gewährleisten.
-            </p>
+        <div class="soft-skills">
+          <h2>Soft Skills</h2>
+          <div class="skills-grid soft-grid">
+            <div class="skill-item soft"><i class="fas fa-users"></i> Teamplayer</div>
+            <div class="skill-item soft"><i class="fas fa-lightbulb"></i> Lösungsorientiert</div>
+            <div class="skill-item soft"><i class="fas fa-clock"></i> Strukturiert</div>
+            <div class="skill-item soft"><i class="fas fa-brain"></i> Anpassungsfähig</div>
+            <div class="skill-item soft"><i class="fas fa-comments"></i> Kommunikationsstark</div>
           </div>
         </div>
       </section>
-
-      <!-- INTERESTS -->
-      <section class="sectionBoxTwo interests">
-        <h2 class="title2">Interessen</h2>
-        <ul>
-          <li>
-            <span class="icon"
-                  title="Computer and Code Icon"><i class="fas fa-laptop-code"></i></span>
-            <span class="text interHover">Coding & Design</span>
-          </li>
-          <li>
-            <span class="icon"
-                  title="Bake & Cook Icon"><i class="fa-solid fa-plate-wheat"></i></span>
-            <span class="text interHover">Backen & Kochen</span>
-          </li>
-          <li>
-            <span class="icon"
-                  title="Walking person Icon"><i class="fas fa-hiking"></i></span>
-            <span class="text interHover">spazieren</span>
-          </li>
-          <li>
-            <span class="icon"
-                  title="Cat icon"><i class="fas fa-cat"></i></span>
-            <span class="text interHover">Meine 2 Katzen</span>
-          </li>
+      <!-- Beruflicher Werdegang & Projekte -->
+      <section class="experience-section">
+        <h2>Beruflicher Werdegang & Projekte</h2>
+        <article class="experience-item">
+          <div class="experience-date">
+            <span>Nov 2023 - Aug 2024</span>
+            <a
+              href="https://n3xtup.de/"
+              target="_blank"
+              rel="noopener"
+            >N3XTUP GmbH</a>
+          </div>
+          <div class="experience-details">
+            <h3>Junior Frontend Developer</h3>
+            <p>
+              Entwicklung einer modernen Hausverwaltungssoftware als Webanwendung unter Einsatz von
+              React.js, JavaScript und Tailwind CSS. Enge Zusammenarbeit mit Backend-Teams zur
+              Integration von REST-APIs (Node.js, Express.js, PostgreSQL) sowie Fokus auf
+              UI/UX-Design, Responsive Design und Performance-Optimierung. Arbeit in einem agilen
+              SCRUM-Team.
+            </p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">
+            <span>Apr 2023 - Jul 2023</span>
+            <a
+              href="https://www.coding-bootcamps.eu/"
+              target="_blank"
+              rel="noopener"
+            >Coding Bootcamps Europe GmbH</a>
+          </div>
+          <div class="experience-details">
+            <h3>Webentwicklungs-Bootcamp Abschlussprojekt</h3>
+            <p>
+              Entwicklung einer "Lost & Found" Web-App im Team mit Vue.js, JavaScript, HTML & CSS.
+              Umsetzung von State-Management (Vuex) und Vue Router in einer modularen Architektur
+              unter Anwendung agiler Methoden (SCRUM, Kanban) und Versionskontrolle via GitHub.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Übertragbare Fähigkeiten -->
+      <section class="transferable-section">
+        <h2>Übertragbare Fähigkeiten aus dem Gesundheitswesen</h2>
+        <p>
+          Meine langjährige Tätigkeit im Gesundheitswesen hat mich in den Bereichen
+          Projektmanagement, Teamarbeit, schnelles Lernen sowie hoher Kundenorientierung geschult –
+          Kompetenzen, die ich gezielt in die Webentwicklung einbringe.
+        </p>
+        <ul class="transferable-list">
+          <li><i class="fas fa-tasks"></i> Projektmanagement & Organisation</li>
+          <li><i class="fas fa-users"></i> Teamarbeit & Kommunikation</li>
+          <li><i class="fas fa-brain"></i> Schnelles Lernen & Anpassungsfähigkeit</li>
+          <li><i class="fas fa-headset"></i> Kundenorientierung</li>
+          <li><i class="fas fa-check-circle"></i> Zuverlässigkeit & Präzision</li>
         </ul>
       </section>
-    </div>
+      <!-- Interessen -->
+      <section class="interests-section">
+        <h2>Interessen</h2>
+        <ul class="interests-list">
+          <li><i class="fas fa-laptop-code"></i> Coding & Design</li>
+          <li><i class="fa-solid fa-plate-wheat"></i> Backen & Kochen</li>
+          <li><i class="fas fa-hiking"></i> Spazierengehen</li>
+          <li><i class="fas fa-cat"></i> Meine 2 Katzen</li>
+        </ul>
+      </section>
+    </main>
   </div>
-
   <script src="script.js"></script>
-
 </body>
 
 </html>
