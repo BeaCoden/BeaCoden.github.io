@@ -356,6 +356,32 @@ body {
   transition: color 0.3s;
 }
 
+/* Style für den Druck-Button */
+.print-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background: #007BFF;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.print-button:hover {
+  background: #0056b3;
+}
+
+/* Button beim Drucken ausblenden */
+@media print {
+  .print-button {
+    display: none;
+  }
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .cv-container {
@@ -363,5 +389,53 @@ body {
   }
   .cv-sidebar {
     margin-bottom: 1.5rem;
+  }
+}
+
+/* === DRUCK-OPTIMIERUNG (A4-Seite) === */
+@media print {
+  body {
+    background: none; /* Hintergrund entfernen */
+    -webkit-print-color-adjust: exact; /* Beibehaltung der Farben beim Drucken */
+  }
+
+  .cv-container {
+    width: 210mm; /* A4-Breite */
+    height: 297mm; /* A4-Höhe */
+    margin: 0 auto;
+    padding: 20mm; /* Abstand zu den Seitenrändern */
+    box-shadow: none; /* Schatten entfernen */
+    display: block; /* Blockformat für Druck */
+    page-break-after: always;
+  }
+
+  .cv-sidebar {
+    width: 30%; /* Sidebar schmaler für Druck */
+    float: left; /* Sidebar links */
+    padding: 10mm;
+  }
+
+  .cv-main {
+    width: 65%; /* Inhalt größer für bessere Lesbarkeit */
+    float: right;
+    padding: 10mm;
+  }
+
+  /* Entferne interaktive Elemente */
+  .contact-section a,
+  .social-links a,
+  .experience-date a {
+    text-decoration: none;
+    color: black !important;
+  }
+
+  /* Verhindere Zeilenumbrüche in Überschriften */
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  /* Verhindere Seitenumbrüche innerhalb von Abschnitten */
+  section {
+    page-break-inside: avoid;
   }
 }
