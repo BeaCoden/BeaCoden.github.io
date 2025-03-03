@@ -77,8 +77,13 @@ body {
 }
 
 /* Kontakt */
+.contact-section {
+
+
+
+}
 .contact-section h3 {
-  font-size: 1.2rem;
+  font-size: var;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--primary-color);
   display: inline-block;
@@ -88,7 +93,7 @@ body {
 .contact-details,
 .social-links {
   list-style: none;
-  margin: 1rem 0;
+  margin: 0;
   padding: 0;
 }
 

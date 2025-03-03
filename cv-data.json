@@ -1,0 +1,96 @@
+{
+  "name": "Bea Pitzschke",
+  "title": "Junior Frontend Developer",
+  "location": "Berlin, Deutschland",
+  "phone": "0176 64 38 54 97",
+  "email": "bea.pitzschke.coden@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/beapitzschke",
+  "github": "https://github.com/BeaCoden",
+  "profile_image": "src/bea.png",
+  "about": "Engagierte Junior Frontend Developerin mit Erfahrung in HTML, CSS, JavaScript, React.js & Vue.js. Ich bringe über 16 Jahre Berufserfahrung im Gesundheitswesen mit und habe meine analytischen und organisatorischen Fähigkeiten in die Webentwicklung übertragen.",
+  "certificates": [
+    {
+      "date": "Januar 2025",
+      "title": "Udemy React.js & TypeScript",
+      "link": "https://www.udemy.com/certificate/UC-d627c832-ec97-4aad-b71e-ef8de978eb78/"
+    },
+    {
+      "date": "Januar 2025",
+      "title": "Udemy HTML5 & CSS3",
+      "link": "https://www.udemy.com/certificate/UC-1928dc3e-3c34-4b64-97ef-c3cc46216488/"
+    },
+    {
+      "date": "April - Juli 2023",
+      "title": "Coding Bootcamp Europe - Webdeveloper Frontend",
+      "link": "./src/Webdevelopment-Zertifikat.png"
+    },
+    {
+      "date": "September 2017 - August 2021",
+      "title": "Orthopädie-Technik-Mechanikerin"
+    },
+    {
+      "date": "September 2003 - August 2008",
+      "title": "Kauffrau im Gesundheitswesen"
+    }
+  ],
+  "languages": [
+    { "name": "Deutsch", "level": 5 },
+    { "name": "Englisch", "level": 4 }
+  ],
+  "skills": {
+    "hard": [
+      "HTML & CSS (Flexbox, Grid)",
+      "Tailwind CSS & Bootstrap",
+      "JavaScript (ES6+, APIs)",
+      "React.js & TypeScript",
+      "Vue.js (Router, Vuex)",
+      "REST-APIs & JSON",
+      "Git & GitHub (CI/CD)",
+      "npm & moderne Webtools",
+      "Agile Methoden (SCRUM, Kanban)"
+    ],
+    "soft": ["Teamplayer", "Lösungsorientiert", "Strukturiert", "Anpassungsfähig", "Kommunikationsstark"]
+  },
+  "experience": [
+    {
+      "date": "Nov 2023 - Aug 2024",
+      "company": "N3XTUP GmbH",
+      "link": "https://n3xtup.de/",
+      "position": "Junior Frontend Developer",
+      "description": "Entwicklung einer Hausverwaltungssoftware mit React.js, JavaScript & Bootstrap. Zusammenarbeit mit Backend-Team zur Integration von REST-APIs."
+    }
+  ],
+  "education": [
+    {
+      "date": "Jan 2025",
+      "title": "Udemy React.js & TypeScript",
+      "link": "https://www.udemy.com/certificate/UC-d627c832-ec97-4aad-b71e-ef8de978eb78/"
+    },
+    {
+      "date": "Jan 2025",
+      "title": "Udemy HTML5 & CSS3",
+      "link": "https://www.udemy.com/certificate/UC-1928dc3e-3c34-4b64-97ef-c3cc46216488/"
+    },
+    {
+      "date": "April - Juli 2023",
+      "title": "Coding Bootcamp Europe - Webdeveloper Frontend",
+      "link": "./src/Webdevelopment-Zertifikat.png"
+    },
+    {
+      "date": "September 2017 - August 2021",
+      "title": "Orthopädie-Technik-Mechanikerin"
+    },
+    {
+      "date": "September 2003 - August 2008",
+      "title": "Kauffrau im Gesundheitswesen"
+    }
+  ],
+  "projects": [
+    {
+      "date": "Juli 2023",
+      "title": "Lost & Found App - Bootcamp Abschlußprojekt",
+      "link": "https://cbe-lostandfound.netlify.app/",
+      "description": "Eine App, um verlorene und gefundene Gegenstände zu melden und zu suchen. Entwickelt mit Vue.js."
+    }
+  ]
+}
